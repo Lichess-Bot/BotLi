@@ -5,10 +5,10 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
-    enabled: true                        # Activate opening books.
+    enabled: false                        # Activate opening books.
     books:
-     white: "lichess-book"                      # Name of the book to use as white.
-      black: "elo3300"                          # Name of the book to use as black.
+    # white: "lichess-book"                      # Name of the book to use as white.
+   #   black: "elo3300"                          # Name of the book to use as black.
 #      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
 #       - "DefaultBook" 
 #     chess960:                           # List of names of books to use for Chess960.
@@ -85,5 +85,4 @@ matchmaking:
 # max_rating_diff: 300                    # Maximum rating distance to opponent. (Commenting allowed)
 
 books: 
-    lichess-book: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.  
-    elo3300: "./engines/elo3300.bin"
+    DefaultBook: "path/to/DefaultBook.bin"
